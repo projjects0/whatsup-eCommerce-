@@ -1,0 +1,320 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatsup</title>
+<img class="img-fluid h-100" src="{{ post.image.url }}" alt="{{ post.title }}" style="object-fit: cover;">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"  />
+    <script src="java.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css'>
+    <link rel="stylesheet" href="./STYLE.css">
+
+</head>
+
+<body  style="background-color: black;">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="/">
+            <img src="https://shopwhatsup.com/cdn/shop/files/logo_fc7d6846-b3f2-456e-a769-4ccaadc34d6a.png?v=1709544316&width=180"
+                alt="logo" style="width:100px;">
+        </a>
+
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/about">ABOUT</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/ALLPRODUCT">ALL PRODUCT</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/PRODUCT">PROUDUCT</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/CONTACT">CONTACT</a>
+            </li>
+        </ul>
+        <form class="search">
+            <input type="text" placeholder="Search" class="search__input" />
+            <button type="button" class="search__button">
+                <i class="ri-search-2-line"></i>
+            </button>
+        </form>
+
+        <a class="nav-link" href="HOME.html">
+            <img src="{% static 'img/shopping-bag.png' %}" alt="Image description" class="shopping-bag-icon">
+        </a>
+    </nav>
+    <!-- IMAGE 1 -->
+    <div class="row">
+        <div class="img1">
+            <img src="{% static 'img/girlsimg.png' %}" alt="Snow" style="width:99%" ; opacity: 0.6;>
+            <p class="p1">
+                Back to College Collection
+            </p>
+            <p class="p2">
+                Back to College Collection has been selected based on its qualit</p>
+            <div class="b1">
+                <button type="button" class="btn btn-outline-danger btn-lg ">All - Collection</button>
+            </div>
+            <div class="b2">
+                <button type="button" class="btn btn-outline-danger btn-lg ">SweatShirt</button>
+            </div>
+<!-- SLIDE SHOW -->
+            <div id="demo" class="carousel slide" data-ride="carousel">
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                </ul>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://shopwhatsup.com/cdn/shop/files/webcover.png?v=1723565137&width=1500"
+                            alt="Los Angeles" width="99%" height="500">
+                        <div class="b3">
+                            <button type="button" class="btn btn-outline-danger btn-lg ">View - Collections</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://shopwhatsup.com/cdn/shop/files/webv.png?v=1722176818&width=1500" alt="Chicago"
+                            width="99%" height="500">
+                        <div class="b4">
+                            <button type="button" class="btn btn-outline-danger btn-lg ">View - Collections</button>
+                        </div>
+                    </div>
+
+
+                </div>
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+            <br>
+            <div class="text1">
+                <h1>Summer - Collections</h1>
+            </div>
+            <br><br><br>
+<!-- container -->
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <a href="https://shopwhatsup.com/collections/dress" target="_blank">
+                                <img src="https://shopwhatsup.com/cdn/shop/collections/DSC06301_copy_2.jpg?v=1725271460&width=330"
+                                    alt="Lights" style="width:100%">
+                                <div class="caption"> <br>
+                                    <button type="button" class="btn btn-outline-secondary">Dress</button>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <a href="file:///E:/w3images/nature.jpg" target="_blank">
+                                <img src="https://shopwhatsup.com/cdn/shop/collections/DSC06797_copy_2.jpg?v=1725449770&width=330"
+                                    alt="Nature" style="width:100%">
+                                <div class="caption"><br>
+                                    <button type="button" class="btn btn-outline-secondary">Blouse</button>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <a href="/w3images/fjords.jpg" target="_blank">
+                                <img src="https://shopwhatsup.com/cdn/shop/collections/DSC07100_copy_2.jpg?v=1725271534&width=330"
+                                    alt="Fjords" style="width:100%">
+                                <div class="caption"><br>
+                                    <button type="button" class="btn btn-outline-secondary">Denim</button>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <a href="/w3images/lights.jpg" target="_blank">
+                                <img src="https://shopwhatsup.com/cdn/shop/collections/DSC06548_copy_2.jpg?v=1714722807&width=330"
+                                    alt="Lights" style="width:100%">
+                                <div class="caption"> <br>
+                                    <button type="button" class="btn btn-outline-secondary">Kimono</button>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <a href="/w3images/nature.jpg" target="_blank">
+                                <img src="https://shopwhatsup.com/cdn/shop/collections/DSC06728_copy_2.jpg?v=1725271490&width=330"
+                                    alt="Nature" style="width:100%">
+                                <div class="caption"><br>
+                                    <button type="button" class="btn btn-outline-secondary">Shirt</button>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <a href="/w3images/fjords.jpg" target="_blank">
+                                <img src="https://shopwhatsup.com/cdn/shop/collections/DSC07974_copy_2.jpg?v=1726319409&width=330"
+                                    alt="Fjords" style="width:100%">
+                                <div class="caption"><br>
+                                    <button type="button" class="btn btn-outline-secondary">SweatShirt</button>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="textt2">
+                <button type="button" class="btn btn-outline-danger btn-lg ">View all</button>
+            </div>
+            <br>
+
+            <div class="imgg1">
+                <img class="imgg1" src="https://shopwhatsup.com/cdn/shop/files/FTM08830.jpg?v=1726735875&width=480"
+                    alt="image">
+
+            </div>
+
+            <div class="textt3">
+                <h2>Shirt- Plain</h2>
+                <div class="textt4">
+                    <p class="textt4">Experience<br>
+                        superior elegance with every piece of our distinctive collection</p>
+                    <div class="textt2">
+                        <button type="button" class="btn btn-outline-danger btn-lg ">Click Here To Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="imgg2">
+                <img class="imgg2"
+                    src="https://shopwhatsup.com/cdn/shop/files/23_f40a9d73-49bd-43b6-8f73-f149882ea1c5.jpg?v=1725444792&width=535"
+                    alt="image">
+
+            </div>
+           
+
+            <div class="textt5">
+                <p>Spring \ Summer 2024</p>
+                <h2>Shirt- Plain</h2>
+                <div class="textt6">
+                    <p class="textt6">Experience<br>
+                        superior elegance with every piece of our <br>distinctive collection, which
+                        embodies the highest<br> standards of quality and design.</p>
+                    <div class="textt2">
+                        <button type="button" class="btn btn-outline-danger btn-lg ">Click Here To - Order
+                            Dress</button>
+                    </div>
+                </div>
+            </div>
+
+<div class="imgg3">
+    <img class="imgg3"
+        src="https://shopwhatsup.com/cdn/shop/files/FTM09093.jpg?v=1726736003&width=535"
+        alt="image">
+
+</div>
+<div class="textt7">
+    <p>Spring \ Summer 2024</p>
+    <h2>New Arrival</h2>
+    <div class="textt8">
+        <p class="textt8">Spoil yourself with the hottest trends in<br>
+        women's fashion from What's Up.
+        <div class="textt2">
+            <button type="button" class="btn btn-outline-danger btn-lg ">Click Here To - Order
+                Dress</button>
+        </div>
+    </div>
+</div>
+<br><br><br>
+<div  class="endbar">
+    <h5>Quick links</h5><br>
+    <div class="textt2">
+<button type="button" class="btn btn-outline-dark">Search</button>
+<button type="button" class="btn btn-outline-dark">About Us</button>
+</div>  <br>
+
+<div class="textt2">
+    <button type="button" class="btn btn-outline-dark">Return Policy</button>
+        <button type="button" class="btn btn-outline-dark">Shipping info</button>
+
+</div><br>
+
+<div class="textt2">
+    <button type="button" class="btn btn-outline-dark">Contact Us</button>
+        <button type="button" class="btn btn-outline-dark">Privacy Policy</button>
+
+</div><br>
+
+<div class="textt2">
+    <button type="button" class="btn btn-outline-dark">Our Branches</button>
+        <button type="button" class="btn btn-outline-dark">Join Our Team</button>
+
+</div><br>
+
+</div>
+<div  class="logolink">
+<a class="facebook" href="HOME.html">
+    <img src="{% static 'img/facebook.png' %}" alt="Image description" class="shopping-bag-icon">
+</a>
+<a class="instagram" href="HOME.html">
+    <img src="{% static 'img/instagram.png' %}" alt="Image description" class="shopping-bag-icon">
+</a>
+<a class="youtube" href="HOME.html">
+    <img src="{% static 'img/youtube.png' %}" alt="Image description" class="shopping-bag-icon">
+</a>
+<a class="tik-tok" href="HOME.html">
+<img src=" {% static 'img/tik-tok.png' %}" alt="Image description" class="shopping-bag-icon">
+</a>
+</div>
+
+<div class="line-1"></div>
+<div class="end">
+<p > © 2024, shopwhatsup Powered by Mostafa</p>
+</div>
+{% block content %}
+{% for post in posts %}
+<h2>{{ post.name }}</h2>
+<p>{{ post.descrp }}</p>
+<p>{{ post.catgr }}</p>
+{% endfor %}
+{% endblock %}
+
+
+</body>
+
+</html>
+
